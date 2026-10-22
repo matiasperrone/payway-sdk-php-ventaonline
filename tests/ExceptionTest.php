@@ -1,4 +1,7 @@
 <?php
+
+namespace Decidir\Tests;
+
 use Decidir\Exception\AllowValue;
 use Decidir\Exception\EmptyValue;
 use Decidir\Exception\RequiredValue;

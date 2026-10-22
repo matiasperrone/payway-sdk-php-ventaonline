@@ -1,4 +1,7 @@
 <?php
+
+namespace Decidir\Tests;
+
 use Decidir\Data\Response;
 use Decidir\Exception\SdkException;
 use PHPUnit\Framework\TestCase;

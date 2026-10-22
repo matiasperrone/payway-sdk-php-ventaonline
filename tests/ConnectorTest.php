@@ -1,4 +1,7 @@
 <?php
+
+namespace Decidir\Tests;
+
 use Decidir\Connector;
 use PHPUnit\Framework\TestCase;
 
@@ -22,8 +25,9 @@ class ConnectorTest extends TestCase
 
     public function testVersionConstantIsDefined()
     {
-        // DECIDIR_VERSION is defined in Connector.php, which the autoloader only loads on first use.
-        $this->connector();
+        // DECIDIR_VERSION is defined in Connector.php, so force the autoloader to load it.
+        $this->assertTrue(class_exists(Connector::class));
         $this->assertTrue(defined('DECIDIR_VERSION'));
+        $this->assertSame('3.0.0', DECIDIR_VERSION);
     }
 }

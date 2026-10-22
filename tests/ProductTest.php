@@ -1,4 +1,7 @@
 <?php
+
+namespace Decidir\Tests;
+
 use Decidir\Cybersource\Product;
 use Decidir\Exception\EmptyValue;
 use Decidir\Exception\RequiredValue;

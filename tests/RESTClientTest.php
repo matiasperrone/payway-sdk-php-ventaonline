@@ -1,4 +1,7 @@
 <?php
+
+namespace Decidir\Tests;
+
 use Decidir\RESTClient;
 use PHPUnit\Framework\TestCase;
 
