@@ -5,7 +5,7 @@ Todos los cambios relevantes de la SDK PHP se documentan en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 Para versiones anteriores a la 2.0.9 consultar el historial de tags y commits del repositorio.
 
-## [2.1.0]
+## [3.0.0] - 2026-10-22
 
 ### Cambiado
 
