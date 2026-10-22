@@ -11,6 +11,8 @@ class RESTClient{
 	private $action = NULL;
 	public $jsonData = NULL;
 	public $service = NULL;
+	public $developer = NULL;
+	public $grouper = NULL;
 
     const DECIDIR_ENDPOINT_DESA = "http://decidir.payway-dev.tanzu.intra";
 	const DECIDIR_ENDPOINT_QA = "http://decidir.payway-qa.tanzu.intra";
@@ -186,7 +188,6 @@ class RESTClient{
         if($codeResponse == 204) {
                 $response = '{"status":"success"}';
         }
-		curl_close($curl);
 
 		return json_decode($response, true);
 	}
