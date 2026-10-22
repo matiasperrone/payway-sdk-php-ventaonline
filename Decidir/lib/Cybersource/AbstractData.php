@@ -2,7 +2,7 @@
 namespace Decidir\Cybersource;
 
 abstract class AbstractData extends \Decidir\Data\AbstractData
-{	
+{
 	private $field_required = array();
 	private $field_optional = array();
 	protected $dataSet = array();
@@ -158,7 +158,7 @@ abstract class AbstractData extends \Decidir\Data\AbstractData
    public function getRequiredFields($data){
 	return $this->field_required;
    }
-	
+
 	public function getOptionalFields(){
 	    return $this->field_optional;
     }

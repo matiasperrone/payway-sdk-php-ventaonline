@@ -51,7 +51,7 @@ class Response extends \Decidir\Data\AbstractData {
             $obj = new \stdClass();
 
             foreach($this->dataResponse[$property] as $index => $value){
-                $obj->$index=$value;                
+                $obj->$index=$value;
             }
             $resp = $obj;
 

@@ -22,6 +22,8 @@ class ConnectorTest extends TestCase
 
     public function testVersionConstantIsDefined()
     {
+        // DECIDIR_VERSION is defined in Connector.php, which the autoloader only loads on first use.
+        $this->connector();
         $this->assertTrue(defined('DECIDIR_VERSION'));
     }
 }
